@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  color: white;
+  background: black;
+  overflow-x: hidden;
+}
+
+/* --- Stars animation --- */
+.stars {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: black;
+  background: radial-gradient(ellipse at bottom, #0d1b2a 0%, #000 100%);
+  overflow: hidden;
+  z-index: -1;
+}
+
+.stars::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background-image: radial-gradient(white, rgba(255,255,255,0.2) 2px, transparent 3px);
+  background-size: 3px 3px;
+  animation: moveStars 60s linear infinite;
+}
+
+@keyframes moveStars {
+  from { transform: translateY(0); }
+  to { transform: translateY(-1000px); }
+}
+
+/* --- Navigation --- */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.7);
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00bfff;
+}
+
+/* --- Intro section --- */
+#intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: left;
+  padding: 20px;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00bfff;
+}
+
+.bio {
+  max-width: 500px;
+}
+
+/* --- Projects --- */
+#projeler {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #00bfff;
+  padding: 20px;
+  border-radius: 15px;
+  width: 400px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card.inactive {
+  opacity: 0.7;
+  cursor: default;
+}
+
+/* --- CV --- */
+#cv {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.cv-frame {
+  width: 80%;
+  height: 80vh;
+  border-radius: 15px;
+  border: 2px solid #00bfff;
+}
+
+/* --- Map --- */
+#harita {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.map-container {
+  width: 80%;
+  height: 500px;
+  margin: 20px auto;
+  border-radius: 15px;
+  border: 2px solid #00bfff;
+  overflow: hidden;
+}
+
+/* --- Footer --- */
+footer {
+  background: rgba(0,0,0,0.8);
+  padding: 40px 0;
+  text-align: center;
+}
+
+.social-icons img {
+  width: 40px;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+footer a {
+  color: #00bfff;
+  text-decoration: none;
+}

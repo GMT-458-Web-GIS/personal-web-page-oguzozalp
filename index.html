@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oğuz Baran Özalp | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/ol@latest/dist/ol.js"></script>
+</head>
+<body>
+  <div class="stars"></div>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#projeler">Projeler</a></li>
+        <li><a href="#iletisim">İletişim</a></li>
+        <li><a href="#harita">Harita</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="intro">
+    <div class="profile-section">
+      <img src="images/profil.jpeg" alt="Profil Fotoğrafı" class="profile-photo">
+      <div class="bio">
+        <h1>OĞUZ BARAN ÖZALP</h1>
+        <h3>HACETTEPE ÜNİVERSİTESİ HARİTA MÜHENDİSLİĞİ</h3>
+        <p>20 Nisan 2001, Çankaya</p>
+        <p>İlgi alanlarım arasında Coğrafi Bilgi Sistemleri (CBS), uzaktan algılama, 
+        konumsal veri analizi ve harita tabanlı yazılım teknolojileri yer alıyor. 
+        Teknik gelişmeleri takip etmeyi, veri odaklı çözümler üretmeyi ve bu alanlarda kendimi sürekli geliştirmeyi hedefliyorum.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projeler">
+    <h2>Projeler</h2>
+    <div class="projects">
+      <a href="https://medium.com/@oguzozalp78/karabük-orman-yangınını-uydu-verileri-ile-takip-etmek-harita-mühendisliği-perspektifi-500e1ac6288d" target="_blank" class="project-card">
+        <h3>Sentinel 2 Uydu Görüntüleri ile Karabük Orman Yangını İncelemesi</h3>
+      </a>
+      <div class="project-card inactive">
+        <h3>Design of a Geodetic Tool for Climate Change Monitoring with AI</h3>
+        <p>Bu proje hâlen devam ediyor...</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="cv">
+    <h2>CV</h2>
+    <iframe src="assets/cv.pdf" frameborder="0" class="cv-frame"></iframe>
+  </section>
+
+  <section id="harita">
+    <h2>OpenLayers Map</h2>
+    <div id="map" class="map-container"></div>
+  </section>
+
+  <footer id="iletisim">
+    <h2>İletişim</h2>
+    <p><strong>E-posta:</strong> <a href="mailto:oguzozalp78@gmail.com">oguzozalp78@gmail.com</a></p>
+    <div class="social-icons">
+      <a href="https://github.com/oguzozalp" target="_blank"><img src="images/github.png" alt="GitHub"></a>
+      <a href="https://www.linkedin.com/in/oguzozalp" target="_blank"><img src="images/linkedin.jpg" alt="LinkedIn"></a>
+      <a href="https://www.instagram.com/oguz_ozalp" target="_blank"><img src="images/instagram.jpg" alt="Instagram"></a>
+    </div>
+    <p class="copyright">© 2025 Oğuz Baran Özalp</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
